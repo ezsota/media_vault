@@ -11,7 +11,7 @@ const DEMO_VIDEO='https://interactive-examples.mdn.mozilla.net/media/cc0-videos/
 const demoUsers=[
  {id:1,name:'Mark Fishman',email:'manfrozeninaglacierwithnopants@example.com',role:'admin',directories:['Family','Trips','Videos']},
  {id:2,name:'Michael Sackson',email:'big.mike@example.com',role:'user',directories:['Family']},
- {id:3,name:'Ellison Torres',email:'ellto@example.com',role:'user',directories:['Trips','Videos']}
+ {id:3,name:'Ellison Torrez',email:'ellto@example.com',role:'user',directories:['Trips','Videos']}
 ];
 const demoDirectories=[
  {id:1,name:'Family',type:'photos',description:'Family photos'},
