@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: media-vault-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: media_vault
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - media_vault_pgdata:/var/lib/postgresql/data
+      - ./server/sql/schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+volumes:
+  media_vault_pgdata:
